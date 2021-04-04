@@ -1,0 +1,49 @@
+a NEWID
+b NEWID
+c NEWID
+d NEWID
+e NEWID
+a 437 ASSIGN
+b -293 ASSIGN
+c 3 ASSIGN
+d 438 ASSIGN
+e -117 ASSIGN
+list NEWID
+a list COMBINE
+b list COMBINE
+c list COMBINE
+d list COMBINE
+e list COMBINE
+max NEWID
+tail NEWID
+diff NEWID
+negDiff NEWID
+negHead NEWID
+emptyList NEWID
+minusOne NEWID
+minusOne -1 ASSIGN
+listWithHeadDiff NEWID
+alwaysTrue NEWID
+alwaysTrue 0 ASSIGN
+list 48 IF
+list max HEAD
+list 48 IF
+list tail TAIL
+list negHead HEAD
+negHead CHS
+diff 0 ASSIGN
+diff max ADD
+diff negHead ADD
+emptyList listWithHeadDiff COPY
+diff listWithHeadDiff COMBINE
+listWithHeadDiff negDiff HEAD
+negDiff CHS
+diff 46 IF
+negDiff 45 IF
+diff minusOne ADD
+negDiff minusOne ADD
+alwaysTrue 40 IF
+list max HEAD
+tail list COPY
+alwaysTrue 29 IF
+HLT

@@ -1,0 +1,25 @@
+a NEWID
+b NEWID
+c NEWID
+d NEWID
+e NEWID
+f NEWID
+g NEWID
+a 2 ASSIGN
+b 21 ASSIGN
+c 42 ASSIGN
+d -7 ASSIGN
+e -12 ASSIGN
+g 0 ASSIGN
+list NEWID
+tailList NEWID
+a list COMBINE
+b list COMBINE
+c list COMBINE
+d list COMBINE
+e list COMBINE
+list tailList TAIL
+tailList list COMBINE
+list f HEAD
+g f COMBINE
+HLT
