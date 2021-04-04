@@ -10,7 +10,7 @@ Run the 'main.rb' to start execution
 This is an implemention of a so-called Simple Programming Language Interpreter or SPLI in
 Ruby, whose purpose is to execute programs written in the Simple Programming Language (SPL). SPL
 has a small set of instructions (a few simple statements and control structures), but uses an awkward
-postx notation for its syntax (i.e., operands rst, operator last).
+postfix notation for its syntax (i.e., operands first, operator last).
 
 SPL has just two data structures, integer numbers and linked lists. Linked list elements can be
 integers or linked lists themselves. identifiers must be declared before they are used, but are not typed
@@ -24,13 +24,13 @@ identifier NEWID -  	This statement declares a new identifier, which can be used
 
 id list COMBINE -	The value bound to id is appended to the list bound to
 			list. The value bound to id (i.e., an integer or a
-			list) becomes the rst element of the list bound to list.
+			list) becomes the first element of the list bound to list.
 			If id is bound to a list l1, l1 will become the rst element of list 
 
 list1 list2 COPY -	The list bound to list1 is deep-copied and bound to identifier
 			list2.
 
-identifier1 identifier2 HEAD - 	The rst element of the list bound to identifier1 is bound to
+identifier1 identifier2 HEAD - 	The first element of the list bound to identifier1 is bound to
 				identifier2. This list is not modied
 
 
